@@ -1,7 +1,7 @@
 <?php require('app/add.code.php'); ?>
 <?php include('inc/header.php') ?>
     <!-- Open Container -->
-    <h1>PHP + MYSQL Crud Address Book</h1>
+    <h1>PHP + MYSQL CRUD Address Book</h1>
     <p><b>Create</b>, Read, Update and Delete records test</p>
     <form class="row row-cols-lg-auto g-3 align-items-center" method="POST">
         <!-- Open Form -->

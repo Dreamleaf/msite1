@@ -1,7 +1,7 @@
 <?php require('app/index.code.php'); ?>
 <?php include('inc/header.php') ?>
 
-    <h1>PHP + MYSQL Crud Address Book</h1>
+    <h1>PHP + MYSQL CRUD Address Book</h1>
     <p>Create, <b>Read</b>, Update and Delete records test</p>
 <table class="table">
   <thead>
