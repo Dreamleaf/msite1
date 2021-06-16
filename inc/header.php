@@ -10,5 +10,16 @@
 <body>
 
   <div class="container"><!-- Open Container -->
-    <a class="btn btn-primary" href="index.php">View All Records</a>
-    <a class="btn btn-primary" href="add.php">Add New Record</a>
+
+    <div class="sticky-top">
+      <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item"><a class="nav-link" href="signup.php">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+      </ul>
+    </div>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="ablisting.php">View All Records</a></li>
+      <li class="nav-item"><a class="nav-link" href="add.php">Add New Record</a></li>
+    </ul>

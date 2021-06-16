@@ -1,8 +1,8 @@
 <?php require('app/add.code.php'); ?>
-<?php include('inc/header.php') ?>
+<?php include_once('inc/header.php') ?>
     <!-- Open Container -->
-    <h1>PHP + MYSQL CRUD Address Book</h1>
-    <p><b>Create</b>, Read, Update and Delete records test</p>
+    <h1>ADD - Address Book</h1>
+    <p>Add a new record to the address book</p>
     <form class="row row-cols-lg-auto g-3 align-items-center" method="POST">
         <!-- Open Form -->
         <div class="col-12">

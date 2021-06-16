@@ -17,4 +17,4 @@ if (strlen($email) === 0) {
 AddressBook::create($first_name, $last_name, $email);
 
 
-header('Location: index.php');
+header('Location: ablisting.php');

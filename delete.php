@@ -1,8 +1,8 @@
 <?php require('app/delete.code.php'); ?>
-<?php include('inc/header.php') ?>
+<?php include_once('inc/header.php') ?>
 
-    <h1>Delete Confirmation Page</h1>
-    <p>Create, Read, Update and <b>Delete</b> records test</p>
+    <h1>Delete - Address Book</h1>
+    <p>Delete and entry from the address book</p>
     <?php if ($model == null) : ?>
       Not Found
     <?php else : $item = encode($model) ?>

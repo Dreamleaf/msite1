@@ -1,8 +1,8 @@
 <?php require('app/edit.code.php'); ?>
-<?php include('inc/header.php') ?>
+<?php include_once('inc/header.php') ?>
 
-    <h1>Edit Form</h1>
-    <p>Create, Read, <b>Update</b> and Delete records test</p>
+    <h1>Edit - Address Book</h1>
+    <p>Edit the entry and click save</p>
     <?php if ($model == null) : ?>
       Not Found
     <?php else : $item = encode($model) ?>
