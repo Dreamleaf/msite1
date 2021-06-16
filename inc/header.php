@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,13 +17,25 @@
 
     <div class="sticky-top">
       <ul class="nav nav-tabs justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="signup.php">Sign Up</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+        <?php
+          if (isset($_SESSION["useruid"])) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"profile.php\">Profile</a></li>";
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"app/logout.inc.php\">Logout</a></li>";
+          }
+          else {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"signup.php\">Sign Up</a></li>";
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"login.php\">Login</a></li>";
+          }
+         ?>
       </ul>
     </div>
 
     <ul class="nav nav-tabs">
       <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="ablisting.php">View All Records</a></li>
-      <li class="nav-item"><a class="nav-link" href="add.php">Add New Record</a></li>
+      <li class="nav-item"><a class="nav-link" href="ablisting.php">Address Book</a></li>
+      <?php
+        if (isset($_SESSION["useruid"])) {
+      echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"add.php\">Add New Record</a></li>";
+    }
+      ?>
     </ul>

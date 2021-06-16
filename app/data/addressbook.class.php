@@ -3,6 +3,7 @@
 class AddressBook {
 
     public static function all() {
+
         $db = self::connect();
 
         $query = $db->query('SELECT * FROM people ORDER BY last_name');

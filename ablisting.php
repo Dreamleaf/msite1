@@ -1,28 +1,17 @@
+<?php include_once('inc/header.php'); ?>
 <?php require('app/ablisting.code.php'); ?>
-<?php include_once('inc/header.php') ?>
 
     <h1>Address Book</h1>
     <p>Listing page, click the name to edit</p>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Last Name, First Name</th>
-      <th>Email</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php foreach ($model as $item) : $item = encode($item) ?>
-      <tr>
-        <td>
-          <a href="edit.php?id=<?= $item['id'] ?>">
-            <?= $item['last_name'] ?>, <?= $item['first_name'] ?>
-          </a>
-        </td>
-        <td><?= $item['email'] ?></td>
-        <td><a href="delete.php?id=<?= $item['id'] ?>" class="btn btn-danger btn-sm">Delete</a></td>
-      </tr>
-    <?php endforeach; ?>
+
+  <?php  if (!isset($_SESSION["useruid"])) {
+      echo "<div class=\"alert alert-warning\" role=\"alert\">You need to be logged in to view this information.</div>";
+    }
+    else {
+      require_once('inc/ablist.tpl.php');
+    }
+    ?>
+
   </tbody>
 </table>
 
