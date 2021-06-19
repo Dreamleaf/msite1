@@ -3,18 +3,31 @@
 
     <h1>Band Bio</h1>
 <div class="container">
-  <div class="row justify-content-end p-3">
-  <a href="editbio.php" type="button" name="button" class="btn btn-primary">Edit</a> <button type="button" name="button" class="btn btn-primary ml-1">Export as PDF</button>
+  <div class="row p-3">
+  <p>Edit the bio here</p>
   </div>
 <div class="row">
   <div class="col">
+    <div class="custom-file p-3">
+  <input type="file" class="custom-file-input" id="customFile">
+  <label class="custom-file-label" for="customFile">Replace current promo image...</label>
+</div>
     <img src="images/band-promo1.jpg" class="img-fluid" alt="">
   </div>
 </div>
 <div class="row">
   <div class="col">
+    <div class="p-3">
+    <input type="text" name="" value="" class="form-control" placeholder="Edit Band Name...">
+    </div>
     <h2>Band Name</h2>
+    <div class="p-3">
+    <input type="text" name="" value="" class="form-control" placeholder="Edit Headline Text...">
+    </div>
     <p class="lead">The greatest band in Redcar just got better - new album recorded and a tour booked</p>
+    <div class="p-3">
+    <input type="text" name="" value="" class="form-control" placeholder="Edit Bio Text...">
+    </div>
     <p>
       O quem nisi cillum mandaremus qui quo in export fabulas o sed labore iudicem
       firmissimum, se ipsum efflorescere sed hic se amet offendit, ad iis illum
@@ -38,6 +51,7 @@
       Irure coniunctione vidisse fugiat vidisse, constias fugiat o litteris
       exercitation.
     </p>
+    <a href="bandbio.php" name="button" class="btn btn-primary">Save Changes</a>
   </div>
 </div>
 </div>
