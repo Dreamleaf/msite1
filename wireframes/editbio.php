@@ -51,7 +51,7 @@
       Irure coniunctione vidisse fugiat vidisse, constias fugiat o litteris
       exercitation.
     </p>
-    <a href="bandbio.php" name="button" class="btn btn-primary">Save Changes</a>
+    <a href="bandbio-editsuccess.php" name="button" class="btn btn-primary">Save Changes</a>
   </div>
 </div>
 </div>
